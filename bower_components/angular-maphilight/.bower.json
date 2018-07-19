@@ -1,0 +1,46 @@
+{
+  "name": "angular-maphilight",
+  "version": "1.0.0",
+  "homepage": "https://github.com/AbdallaMohamed/angular-maphilight",
+  "authors": [
+    "Abdalla Mohamed El-Abd <abdalla.mohamed.elabd@gmail.com>"
+  ],
+  "main": [
+    "./lib/angular.maphilight.js"
+  ],
+  "keywords": [
+    "angular",
+    "angularjs",
+    "jquery",
+    "maphilight"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.0",
+    "jQuery": "~2.2.1"
+  },
+  "devDependencies": {
+    "bootstrap": "~3.3.6",
+    "ui-router": "~0.2.18",
+    "angular-bootstrap": "0.12.0",
+    "font-awesome": "~4.5.0",
+    "angular-animate": "~1.5.0"
+  },
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.0",
+    "commit": "07472af41c8bf0d21620a28bbf2fba3ded683838"
+  },
+  "_source": "https://github.com/AbdallaMohamed/angular-maphilight.git",
+  "_target": "^1.0.0",
+  "_originalSource": "angular-maphilight",
+  "_direct": true
+}

@@ -11,11 +11,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 
 import { HomePage } from '../pages/home/home';
+import { TestPage } from '../pages/test/test'
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp implements OnInit{
-  rootPage:any = HomePage;
+  rootPage:any = TestPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

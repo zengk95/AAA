@@ -6,21 +6,29 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp, FormatTimePipe } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { TestPage } from '../pages/test/test'
+
+import { HttpModule } from '@angular/http';
+
+
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
+    TestPage,
     FormatTimePipe
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    TestPage
   ],
   providers: [
     StatusBar,
