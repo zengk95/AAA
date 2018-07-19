@@ -14,19 +14,20 @@
 
   <ion-card style="height:45%">
 
-    <ion-card-header>
-      AAA
-    </ion-card-header>
-
     <ion-card-content>
       <a href="https://www.google.com">
-      <img src="http://1000logos.net/wp-content/uploads/2017/11/USAA-Logo.png">
-    </a>
+        <img src="assets/imgs/prezifinal.jpg" class="item item-image">
+      </a>
     </ion-card-content>
 
   </ion-card>
-  <div>
-    <h1 class="heading">Next Offer In:</h1>
+
+  <div style="background-color: #fffcfc;
+  margin: auto;
+  margin-bottom: -2em;
+  margin-top: -1.5em;
+  width:250px">
+    <h1  class="heading" style="font-size:.75em">Next Offer In:</h1>
     <div id="clock">
 
       <div class="block">
@@ -49,72 +50,97 @@
 
     </div>
   </div>
-  <div>
-    <ion-card style="margin-top:-2em; height:45%">
-      <ion-card-header>
-        {{offers['Name']}}
-      </ion-card-header>
-      <ion-card-content>
 
-        <ion-grid>
-          <ion-row>
-            <ion-col>
-              {{offers['Description']}}
-            </ion-col>
-            <ion-col>
-              <div class="dog">
-                <div class="ears"></div>
+  <ion-card>
 
-                <div class="body">
-                  <div class="eyes"></div>
-                  <div class="beard">
-                    <div class="mouth">
-                      <div class="tongue"></div>
-                    </div>
-                  </div>
-                  <div class="belt">
-                    <div class="locket"></div>
-                    <div class="dot dot1"></div>
-                    <div class="dot dot2"></div>
-                    <div class="dot dot3"></div>
-                    <div class="dot dot4"></div>
-                  </div>
 
-                </div>
+    <ion-card-header>
+      <div style="margin:auto; text-align:center; font-size:1.5em">
+      {{offers['Name']}}
+    </div>
+    </ion-card-header>
+    <ion-card-content>
+
+      <ion-grid>
+        <ion-row>
+          <div id=container class="graphic">
+            Keep
+            <div>
+              Pets
+            </div>
+            <div>
+              financially
+            </div>
+            <div id=flip>
+              <div>
+                <div>safe</div>
               </div>
+              <div>
+                <div>independent</div>
+              </div>
+              <div>
+                <div>secure</div>
+              </div>
+            </div>
 
-            </ion-col>
+          </div>
 
-          </ion-row>
-          <ion-row>
-            <ion-col>
-              <div class="wrapper" style="padding-top:100px">
-                <div class="toggle-wrapper">
-                  <input type="checkbox" class="doggle" id="doggle" />
-                  <label for="doggle" class="toggle">
-                    <span class="toggle-handler">
-                      <span class="face eye-left"></span>
-                      <span class="face eye-right"></span>
-                      <span class="nose"></span>
-                      <span class="face mouth1"></span>
-                      <span class="face mouth2"></span>
-                      <span class="face2 mouth-smile"></span>
-                      <span class="face2 mouth-smile2"></span>
-                      <span class="left-ear">
-                        <span class="right-ear">
-                          <span class="tongue"></span>
-                        </span>
+          <ion-col>
+            <div class="dog" style="margin:auto">
+              <div class="ears"></div>
+
+              <div class="body">
+                <div class="eyes"></div>
+                <div class="beard">
+                  <div class="mouth">
+                    <div class="tongue"></div>
+                  </div>
+                </div>
+                <div class="belt">
+                  <div class="locket"></div>
+                  <div class="dot dot1"></div>
+                  <div class="dot dot2"></div>
+                  <div class="dot dot3"></div>
+                  <div class="dot dot4"></div>
+                </div>
+
+              </div>
+            </div>
+
+          </ion-col>
+
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="wrapper" style="padding-top:100px">
+              <div class="toggle-wrapper">
+                <input type="checkbox" class="doggle" id="doggle" />
+                <label for="doggle" class="toggle">
+                  <span class="toggle-handler">
+                    <span class="face eye-left"></span>
+                    <span class="face eye-right"></span>
+                    <span class="nose"></span>
+                    <span class="face mouth1"></span>
+                    <span class="face mouth2"></span>
+                    <span class="face2 mouth-smile"></span>
+                    <span class="face2 mouth-smile2"></span>
+                    <span class="left-ear">
+                      <span class="right-ear">
+                        <span class="tongue"></span>
                       </span>
                     </span>
-                  </label>
-                </div>
+                  </span>
+                </label>
               </div>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 
-      </ion-card-content>
-    </ion-card>
+    </ion-card-content>
+  </ion-card>
 
-  </div>
+  <ion-card>
+
+  </ion-card>
 </ion-content>
