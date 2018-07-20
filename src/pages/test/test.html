@@ -6,28 +6,24 @@
 -->
 <ion-header>
 
+  <ion-navbar color="usaaBlue">
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
 
+    <ion-title>
+      <span style="color:usaaOffWhite">OurPortfolio</span>
+    </ion-title>
+
+  </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 
 
-  <ion-card style="height:45%">
 
-    <ion-card-content>
-      <a href="https://www.google.com">
-        <img src="assets/imgs/prezifinal.jpg" class="item item-image">
-      </a>
-    </ion-card-content>
-
-  </ion-card>
-
-  <div style="background-color: #fffcfc;
-  margin: auto;
-  margin-bottom: -2em;
-  margin-top: -1.5em;
-  width:250px">
-    <h1  class="heading" style="font-size:.75em">Next Offer In:</h1>
+  <div style="margin: auto; margin-bottom: -2em; width:250px">
+    <h1 class="heading" style="font-size:1.5em">Next Offer In:</h1>
     <div id="clock">
 
       <div class="block">
@@ -56,8 +52,8 @@
 
     <ion-card-header>
       <div style="margin:auto; text-align:center; font-size:1.5em">
-      {{offers['Name']}}
-    </div>
+        {{offers['Name']}}
+      </div>
     </ion-card-header>
     <ion-card-content>
 
@@ -110,11 +106,12 @@
           </ion-col>
 
         </ion-row>
-        <ion-row>
+        <ion-row style="margin-top:40px;margin-bottom:30px">
           <ion-col>
-            <div class="wrapper" style="padding-top:100px">
+            <!-- <div class="wrapper" style="padding-top:100px">
               <div class="toggle-wrapper">
-                <input type="checkbox" class="doggle" id="doggle" />
+                <input type="checkbox" name="redirect" onclick="window.location='https://firebasestorage.googleapis.com/v0/b/aaausaa-94fc2.appspot.com/o/infographicfinal.png?alt=media&token=26592a89-4bda-41b2-99da-ca9b70bc27dc'"
+                  class="doggle" id="doggle" />
                 <label for="doggle" class="toggle">
                   <span class="toggle-handler">
                     <span class="face eye-left"></span>
@@ -131,7 +128,12 @@
                     </span>
                   </span>
                 </label>
+
               </div>
+            </div> -->
+            <div style="text-align:center">
+              <a href="https://firebasestorage.googleapis.com/v0/b/aaausaa-94fc2.appspot.com/o/infographicfinal.png?alt=media&token=26592a89-4bda-41b2-99da-ca9b70bc27dc"
+                class="material-button fade">Learn More</a>
             </div>
           </ion-col>
         </ion-row>
@@ -140,7 +142,172 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-card>
+  <ion-card style="height:600px;">
+    <ion-grid>
+      <ion-row>
+        <ion-col style="border-style: solid; height:50%px;border-color:#12395B">
+          <div style="width:100%;height:200px">
+            <!-- <ion-fab center middle #fab5>
+              <button ion-fab color="usaaBlue">
+                <ion-icon name="call"></ion-icon>
+              </button>
+              <ion-fab-list side="top">
+                <a href="https://firebasestorage.googleapis.com/v0/b/aaausaa-94fc2.appspot.com/o/infographicfinal.png?alt=media&token=26592a89-4bda-41b2-99da-ca9b70bc27dc"
+                  ion-fab color="primary">
+                  <ion-icon name="car"></ion-icon>
+                </a>
+              </ion-fab-list>
+              <ion-fab-list side="bottom">
+                <a href="https://firebasestorage.googleapis.com/v0/b/aaausaa-94fc2.appspot.com/o/infographicfinal.png?alt=media&token=26592a89-4bda-41b2-99da-ca9b70bc27dc"
+                  ion-fab color="secondary">
+                  <ion-icon name="chatbubbles"></ion-icon>
+                </a>
+              </ion-fab-list>
+              <ion-fab-list side="left">
+                <a href="https://firebasestorage.googleapis.com/v0/b/aaausaa-94fc2.appspot.com/o/infographicfinal.png?alt=media&token=26592a89-4bda-41b2-99da-ca9b70bc27dc"
+                  ion-fab color="light">
+                  <ion-icon name="cloud"></ion-icon>
+                </a>
+              </ion-fab-list>
+              <ion-fab-list side="right">
+                <a href="https://firebasestorage.googleapis.com/v0/b/aaausaa-94fc2.appspot.com/o/infographicfinal.png?alt=media&token=26592a89-4bda-41b2-99da-ca9b70bc27dc"
+                  ion-fab color="dark">
+                  <ion-icon name="color-fill"></ion-icon>
+                </a>
+              </ion-fab-list>
 
+            </ion-fab> -->
+            <ion-fab center middle #fab5>
+                <button ion-fab color="danger"><ion-icon name="md-share"></ion-icon></button>
+                <ion-fab-list side="top">
+                  <button ion-fab (click)="openSocial('vimeo', fab5)" color="primary"><ion-icon name="logo-vimeo"></ion-icon></button>
+                </ion-fab-list>
+                <ion-fab-list side="bottom">
+                  <button ion-fab (click)="openSocial('facebook', fab5)" color="secondary"><ion-icon name="logo-facebook"></ion-icon></button>
+                </ion-fab-list>
+                <ion-fab-list side="left">
+                  <button ion-fab (click)="openSocial('googleplus', fab5)" color="light"><ion-icon name="logo-googleplus"></ion-icon></button>
+                </ion-fab-list>
+                <ion-fab-list side="right">
+                  <button ion-fab (click)="openSocial('twitter', fab5)" color="dark"><ion-icon name="logo-twitter"></ion-icon></button>
+                </ion-fab-list>
+              </ion-fab>
+          </div>
+          <ion-item style="text-align:center">Insurance</ion-item>
+
+        </ion-col>
+        <ion-col style="border-style: solid; height:50%px; border-color:#12395B">
+          <div style="width:100%;height:200px">
+            <ion-fab center middle #fab5>
+              <a ion-fab color="usaaDarkGreen">
+                <ion-icon name="cash"></ion-icon>
+              </a>
+              <ion-fab-list side="top">
+                <a href="https://firebasestorage.googleapis.com/v0/b/aaausaa-94fc2.appspot.com/o/infographicfinal.png?alt=media&token=26592a89-4bda-41b2-99da-ca9b70bc27dc"
+                  ion-fab color="primary">
+                  <ion-icon name="cog"></ion-icon>
+                </a>
+              </ion-fab-list>
+              <ion-fab-list side="bottom">
+                <a href="https://firebasestorage.googleapis.com/v0/b/aaausaa-94fc2.appspot.com/o/infographicfinal.png?alt=media&token=26592a89-4bda-41b2-99da-ca9b70bc27dc"
+                  ion-fab color="secondary">
+                  <ion-icon name="color-wand"></ion-icon>
+                </a>
+              </ion-fab-list>
+              <ion-fab-list side="left">
+                <a href="https://firebasestorage.googleapis.com/v0/b/aaausaa-94fc2.appspot.com/o/infographicfinal.png?alt=media&token=26592a89-4bda-41b2-99da-ca9b70bc27dc"
+                  ion-fab color="light">
+                  <ion-icon name="copy"></ion-icon>
+                </a>
+              </ion-fab-list>
+              <ion-fab-list side="right">
+                <a href="https://firebasestorage.googleapis.com/v0/b/aaausaa-94fc2.appspot.com/o/infographicfinal.png?alt=media&token=26592a89-4bda-41b2-99da-ca9b70bc27dc"
+                  ion-fab color="dark">
+                  <ion-icon name="cube"></ion-icon>
+                </a>
+              </ion-fab-list>
+
+            </ion-fab>
+          </div>
+          <ion-item style="text-align:center">Discounts</ion-item>
+
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col style="border-style: solid; height:50%px; border-color:#12395B">
+          <div style="width:100%;height:200px">
+            <ion-fab center middle #fab5>
+              <a ion-fab color="usaaDarkRed">
+                <ion-icon name="person"></ion-icon>
+              </a>
+              <ion-fab-list side="top">
+                <a href="https://firebasestorage.googleapis.com/v0/b/aaausaa-94fc2.appspot.com/o/infographicfinal.png?alt=media&token=26592a89-4bda-41b2-99da-ca9b70bc27dc"
+                  ion-fab color="primary">
+                  <ion-icon name="cut"></ion-icon>
+                </a>
+              </ion-fab-list>
+              <ion-fab-list side="bottom">
+                <a href="https://firebasestorage.googleapis.com/v0/b/aaausaa-94fc2.appspot.com/o/infographicfinal.png?alt=media&token=26592a89-4bda-41b2-99da-ca9b70bc27dc"
+                  ion-fab color="secondary">
+                  <ion-icon name="desktop"></ion-icon>
+                </a>
+              </ion-fab-list>
+              <ion-fab-list side="left">
+                <a href="https://firebasestorage.googleapis.com/v0/b/aaausaa-94fc2.appspot.com/o/infographicfinal.png?alt=media&token=26592a89-4bda-41b2-99da-ca9b70bc27dc"
+                  ion-fab color="light">
+                  <ion-icon name="egg"></ion-icon>
+                </a>
+              </ion-fab-list>
+              <ion-fab-list side="right">
+                <a href="https://firebasestorage.googleapis.com/v0/b/aaausaa-94fc2.appspot.com/o/infographicfinal.png?alt=media&token=26592a89-4bda-41b2-99da-ca9b70bc27dc"
+                  ion-fab color="dark">
+                  <ion-icon name="eye"></ion-icon>
+                </a>
+              </ion-fab-list>
+
+            </ion-fab>
+          </div>
+          <ion-item style="text-align:center">Services</ion-item>
+
+        </ion-col>
+        <ion-col style="border-style: solid; height:50%px;  border-color:#12395B">
+          <div style="width:100%;height:200px">
+            <ion-fab center middle #fab5>
+              <a ion-fab color="usaaYellow">
+                <ion-icon name="help"></ion-icon>
+              </a>
+              <ion-fab-list side="top">
+                <a href="https://firebasestorage.googleapis.com/v0/b/aaausaa-94fc2.appspot.com/o/infographicfinal.png?alt=media&token=26592a89-4bda-41b2-99da-ca9b70bc27dc"
+                  ion-fab color="primary">
+                  <ion-icon name="flag"></ion-icon>
+                </a>
+              </ion-fab-list>
+              <ion-fab-list side="bottom">
+                <a href="https://firebasestorage.googleapis.com/v0/b/aaausaa-94fc2.appspot.com/o/infographicfinal.png?alt=media&token=26592a89-4bda-41b2-99da-ca9b70bc27dc"
+                  ion-fab color="secondary">
+                  <ion-icon name="finger-print"></ion-icon>
+                </a>
+              </ion-fab-list>
+              <ion-fab-list side="left">
+                <a href="https://firebasestorage.googleapis.com/v0/b/aaausaa-94fc2.appspot.com/o/infographicfinal.png?alt=media&token=26592a89-4bda-41b2-99da-ca9b70bc27dc"
+                  ion-fab color="light">
+                  <ion-icon name="flower"></ion-icon>
+                </a>
+              </ion-fab-list>
+              <ion-fab-list side="right">
+                <a href="https://firebasestorage.googleapis.com/v0/b/aaausaa-94fc2.appspot.com/o/infographicfinal.png?alt=media&token=26592a89-4bda-41b2-99da-ca9b70bc27dc"
+                  ion-fab color="dark">
+                  <ion-icon name="funnel"></ion-icon>
+                </a>
+              </ion-fab-list>
+            </ion-fab>
+          </div>
+          <ion-item style="text-align:center">Other</ion-item>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-card>
+
+
 </ion-content>

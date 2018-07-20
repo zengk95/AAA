@@ -1,4 +1,5 @@
 page-test {
+
   body{
     font-family: 'Roboto Slab', serif;
   }
@@ -672,5 +673,71 @@ page-test {
     color:#999;
     margin-top:200px;
   }
+
+  .text-on-bottom > .button-inner {
+    flex-direction: column;
+  }
+  @import url(https://fonts.googleapis.com/css?family=Roboto:500);
+  .fade, .fade:after, .fade:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .material-button {
+    padding: 25px 45px;
+    font-size: 1.8rem;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    color: #fff;
+    background: #12395B;
+    border: 0;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .material-button:hover {
+    box-shadow: 0px 6px 8px -3px rgba(0, 0, 0, 0.3);
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+ .material-button:focus {
+    outline: none;
+  }
+  
+  .taint {
+    display: block;
+    position: absolute;
+    background: #12395B;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .taint.drop {
+    -webkit-animation: ripple 0.65s linear;
+            animation: ripple 0.65s linear;
+  }
+  @-webkit-keyframes ripple {
+    100% {
+      opacity: 0;
+      -webkit-transform: scale(2.5);
+              transform: scale(2.5);
+    }
+  }
+  @keyframes ripple {
+    100% {
+      opacity: 0;
+      -webkit-transform: scale(2.5);
+              transform: scale(2.5);
+    }
+  }
+  
+  
 
 }
